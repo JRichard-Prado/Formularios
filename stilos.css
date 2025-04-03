@@ -1,0 +1,47 @@
+
+ #formulario{
+    width: 50%;
+  
+ }
+ 
+#parte1{
+    width: 100%;
+    visibility: visible;
+    position: relative;
+    /* visibility: hidden; */
+    /* background-color: aquamarine; */
+}
+#parte2{
+    width: 100%;
+    display: none;
+    /* visibility: hidden; */
+    /* position: absolute; */
+    /* background-color: aquamarine; */
+}
+#parte3{
+    width: 100%;
+    display: none;
+    /* visibility: hidden; */
+    /* position: absolute; */
+    /* background-color: aquamarine; */
+}
+legend{
+    font-size: 1rem ;
+   
+}
+fieldset{
+   
+    height: 5rem;
+   
+} 
+h1{
+    color: #28456f;
+    
+}
+.mostrar{
+   /* background-color: aquamarine; */
+   visibility: visible;
+}
+.ocultar{
+    visibility: hidden;
+}

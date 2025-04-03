@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilos.css">
+   
+</head>
+
+<body>
+    <section class="container mt-1 " id="formulario" >
+        <h1 class="text-center" id="titulo">Formulario de Contacto</h1>
+        <form action="#" method="get" class="mt-2">
+            <section id="parte1" class="">
+                
+                <div class="form-floating mb-2 ">
+
+                    <input type="text" class="form-control" id="apellidos" placeholder="hola" required>
+                    <label for="apellidos">Apellidos</label>
+                </div>
+
+                <div class="mb-2 form-floating">
+                    <input type="text" class="form-control" id="nombre" aria-describedby="nameHelp" placeholder="nombre"
+                        required>
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div class="mb-2 form-floating">
+                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="email"
+                        required>
+                    <label for="mail">Correo Electrónico</label>
+
+                </div>
+                <div class="mb-2 form-floating">
+                    <input type="tel" class="form-control" id="telefono" aria-describedby="phoneHelp"
+                        placeholder="telefono">
+                    <label for="telefono">Teléfono</label>
+                </div>
+                <div class="mb-2 form-floating">
+                    <input type="text" class="form-control" id="identificacion" aria-describedby="addressHelp"
+                        placeholder="dni" required>
+                    <label for="identificacion">DNI / NIE</label>
+                </div>
+                <div class="mb-2">
+                    <label for="fecha-nacido" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fecha-nacido" aria-describedby="addressHelp" required>
+                </div>
+                <fieldset id="content-sex" class="mb-2 border p-2 rounded">
+                    <legend>Sexo</legend>
+                    <div class=" form-check-inline">
+                        <input type="radio" class="form-check-input" id="el" name="sexo">
+                        <label class="form-check-label" for="el">El</label>
+                    </div>
+                    <div class=" form-check-inline">
+                        <input type="radio" class="form-check-input" id="ella" name="sexo">
+                        <label for="ella" class="form-label">Ella</label>
+                    </div>
+                    <div class="  form-check-inline">
+                        <input type="radio" class="form-check-input" id="ello" name="sexo">
+                        <label for="ello" class="form-label">Ello</label>
+                    </div>
+                    <div class=" form-check-inline ">
+                        <input type="radio" class="form-check-input" id="no-binario" name="sexo">
+                        <label for="no-binario" class="form-label">No binario</label>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="parte2">
+
+               <h2>segunda parte</h2>
+            </section>
+            <section id="parte3">
+                <button type="submit" class="btn btn-primary ">Enviar</button>
+            </section>
+            <button type="reset" class="btn btn-outline-success">Limpiar Campos</button>
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-center ">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous" id="anterior">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" id="btn1" >1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" id="btn2" >2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" id="btn3">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next" id="siguiente">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
