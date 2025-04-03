@@ -15,27 +15,22 @@
 }
 #parte2{
     width: 100%;
-    height: 90vh;
+    height: 84vh;
     display: none;
-    position: relative;
-    top: -90vh;
    
-  background-color: #28466f60;
 }
 #parte3{
     width: 100%;
-    height: 90vh;
+    height: 84vh;
     display: none;
-    background-color: #28456f;
 }
 legend{
     font-size: 1rem ;
-   
 }
 fieldset{
     height: 5rem;
 } 
-h1, h2{
+h1, h4{
     color: #28456f;
     
 }
