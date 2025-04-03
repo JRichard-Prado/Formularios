@@ -83,11 +83,93 @@ let boton2 = document.getElementById('btn2');
 let boton3 = document.getElementById('btn3');
 let siguiente = document.getElementById('siguiente');
 
+// alert('boton 1:'+ boton1.classList.contains('disabled'));
+// alert('boton 2:'+ boton2.classList.contains('disabled'));
+// alert('boton 3:'+ boton3.classList.contains('disabled'));
+
 // Agregar un evento al botón para cambiar el texto del título
+previo.addEventListener('click', () => {
+    if (boton3.classList.contains('disabled') && !boton2.classList.contains('disabled')) {
+        // Navegar de boton3 a boton2
+        // p3.style.visibility = 'hidden';
+        // p2.style.visibility = 'visible';
+        // p1.style.visibility = 'hidden';
+
+        boton3.classList.remove('disabled');
+        boton2.classList.add('disabled');
+        boton1.classList.remove('disabled');
+        siguiente.classList.remove('disabled');
+    }
+     else if (boton2.classList.contains('disabled')) {
+        // Navegar de boton2 a boton1
+        // p2.style.display = 'block';
+        // p1.style.visibility = 'visible';
+        // p3.style.visibility = 'hidden';
+
+        boton2.classList.remove('disabled');
+        boton1.classList.add('disabled');
+        boton3.classList.remove('disabled');
+        siguiente.classList.remove('disabled');
+        previo.classList.add('disabled');
+    }
+});
+
 boton1.addEventListener('click', () => {
-    titulo.style.visibility = 'visible';
     p1.style.visibility = 'visible';
-    p2.style.display = 'none';
+    p2.style.visibility = 'visible';
     p3.style.display = 'none';
-    
+
+    previo.classList.add('disabled');
+    boton1.classList.add('disabled');
+    boton2.classList.remove('disabled');
+    boton3.classList.remove('disabled');
+    siguiente.classList.remove('disabled');
+
+});
+boton2.addEventListener('click', () => {
+    p1.style.visibility = 'hidden';
+    p2.style.visibility = 'visible';
+    p3.style.display = 'none';
+    previo.classList.remove('disabled');
+    boton1.classList.remove('disabled');
+    boton2.classList.add('disabled');   
+    boton3.classList.remove('disabled');
+    siguiente.classList.remove('disabled');
+
+});
+boton3.addEventListener('click', () => {
+    p1.style.visibility = 'hidden';
+    p2.style.display = 'none';
+    p3.style.visibility = 'visible';
+    previo.classList.remove('disabled');
+    boton1.classList.remove('disabled');
+    boton2.classList.remove('disabled');   
+    boton3.classList.add('disabled');
+    siguiente.classList.add('disabled');
+   
+});
+
+siguiente.addEventListener('click', () => {
+    if (boton1.classList.contains('disabled') && !boton2.classList.contains('disabled')) {
+        // Navegar de boton3 a boton2
+        p3.style.visibility = 'hidden';
+        p2.style.visibility = 'visible';
+        p1.style.visibility = 'hidden';
+
+        boton1.classList.remove('disabled');
+        boton2.classList.add('disabled');
+        boton3.classList.remove('disabled');
+        siguiente.classList.remove('disabled');
+    }
+     else if (boton2.classList.contains('disabled')) {
+        // Navegar de boton2 a boton1
+        p2.style.visibility = 'hidden';
+        p1.style.visibility = 'visible';
+        p3.style.visibility = 'hidden';
+
+        boton2.classList.remove('disabled');
+        boton3.classList.add('disabled');
+        boton1.classList.remove('disabled');
+        siguiente.classList.add('disabled');
+    }
 });
