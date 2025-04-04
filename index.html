@@ -50,7 +50,7 @@
                     <label for="fecha-nacido" class="form-label">Fecha de Nacimiento</label>
                 </div>
                 <fieldset id="content-sex" class="border p-3 rounded">
-                    <legend class="" >Sexo</legend>
+                    <legend class="">Sexo</legend>
                     <div class=" form-check-inline">
                         <input type="radio" class="form-check-input" id="el" name="sexo">
                         <label class="form-check-label" for="el">El</label>
@@ -109,11 +109,11 @@
                 <div class="mb-2 ">
                     <label for="calle" class="mx-2">Calle</label>
                     <input type="text" class="form-control mt-2" id="direccion" placeholder="" required>
-                    
+
                     <div class="mb-2">
                         <label for="direccion" class="mx-2">Numero de Portal</label>
                         <input type="number" class="form-control" id="num" placeholder="" required>
-                       
+
                     </div>
                     <div class="mb-1">
                         <label for="piso" class="mx-2">Piso </label>
@@ -132,13 +132,42 @@
 
                     <h4 class="text-center">Datos de Direccion</h4>
             </section>
-            <section id="parte3">
-                <div class="d-flex justify-content-end">
+            <section id="parte3" >
+                <section  >
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="protec-datos">
+                        <label class="form-check-label" for="protec-datos">
+                            L.O.P.D.
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="licencia">
+                        <label class="form-check-label" for="licencia">
+                            Licencias de Uso
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="legales">
+                        <label for="legales" class="form-check-label">
+                            Textos Legales
+                        </label>
+                    </div>
+                   
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="politicas">
+                        <label for="politicas" class="form-check-label">
+                            Terminos y Condiciones                        </label>
+                    </div>
+                </section>
+
+
+                <div class="d-flex justify-content-center">
+                    <button type="reset" class="btn btn-outline-success me-4">Limpiar Campos</button>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
                 <h4 class="text-center">Politicas de Privacidad</h4>
             </section>
-            <!-- <button type="reset" class="btn btn-outline-success">Limpiar Campos</button> -->
+
 
             <nav aria-label="Page navigation example ">
                 <ul class="pagination justify-content-center ">
